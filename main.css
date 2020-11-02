@@ -1,8 +1,11 @@
 
 
 
+h1 {
+    padding-left: 5%;
+}
 #bac-form {
-    padding: 5%;
+    padding-left: 5%;
 }
 
 #bac-form input {
@@ -11,5 +14,6 @@
 }
 
 #bac-output {
-    padding: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
 }
