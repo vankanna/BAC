@@ -1,11 +1,8 @@
 
-
-
 $( document ).ready(function() {
-    function calculateBA() {
+        function BAC() {
         // get all inputs
         var numberOfBeers = $("#bac-num-beers").val();
-        console.log(numberOfBeers);
         var numberOfWine = $("#bac-num-wine").val();
         var numberOfShots = $("#bac-num-shots").val();
         var pounds = $("#bac-pounds").val();
@@ -22,18 +19,16 @@ $( document ).ready(function() {
         // apply time since first drink
         totalAlcoholConsumed -= (hours * 0.015);
 
-        // round it to third decimal place
         var bloodAlcohol = totalAlcoholConsumed;
 
         // output
-        $("#bac-output").text("Your Blood Alcohol Level Is: " + bloodAlcohol.toFixed(3));
+        $("#bac-output").text("Your Blood Alcohol Level is: " + bloodAlcohol.toFixed(3)+"%");
 
     }
 
     $( "#bac-calculate-button" ).click(function(e) {
         e.preventDefault();
-        calculateBA();
+        BAC();
     });
-
 
 });
